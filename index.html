@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jam Digital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="container">
+    <h1>Jam Digital</h1>
+    <div id="jam-digital">00:00:00</div>
+    <p id="tanggal-hari">Hari, 01 Januari 2025</p>
+
+    <!-- Alarm -->
+    <div class="alarm-section">
+      <h3>Set Alarm</h3>
+      <input type="number" id="alarmHour" placeholder="Jam" min="0" max="23" />
+      <input type="number" id="alarmMinute" placeholder="Menit" min="0" max="59" />
+      <button onclick="setAlarm()">Set Alarm</button>
+      <p id="alarmStatus">Belum ada alarm</p>
+    </div>
+
+    <!-- Timer -->
+    <div class="timer-section">
+      <h3>Timer</h3>
+      <input type="number" id="timerMinute" placeholder="Menit" min="0" />
+      <input type="number" id="timerSecond" placeholder="Detik" min="0" max="59" />
+      <button onclick="startTimer()">Mulai Timer</button>
+      <div id="timerDisplay" class="timer-display">Timer belum aktif</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
