@@ -1,0 +1,61 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  transition: box-shadow 0.3s ease;
+}
+
+input {
+  width: 60px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #0f0;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#clock, .timer-display {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+#calendar {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.alarm-active {
+  animation: blink-red 1s infinite;
+  box-shadow: 0 0 20px red;
+}
+
+@keyframes blink-red {
+  0% { background-color: rgba(255, 0, 0, 0.2); }
+  50% { background-color: rgba(255, 0, 0, 0.5); }
+  100% { background-color: rgba(255, 0, 0, 0.2); }
+}
